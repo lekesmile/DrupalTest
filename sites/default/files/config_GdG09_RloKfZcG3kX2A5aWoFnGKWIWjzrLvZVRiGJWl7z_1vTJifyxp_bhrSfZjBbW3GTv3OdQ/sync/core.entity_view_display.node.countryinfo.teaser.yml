@@ -1,0 +1,30 @@
+uuid: d95da6ec-159b-44e5-a216-e3078325b91f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.countryinfo.body
+    - node.type.countryinfo
+  module:
+    - text
+    - user
+id: node.countryinfo.teaser
+targetEntityType: node
+bundle: countryinfo
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

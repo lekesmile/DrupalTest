@@ -1,0 +1,22 @@
+uuid: cef860c4-d918-48de-bcc8-30cc688e74b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.countryinfo
+  module:
+    - text
+id: node.countryinfo.body
+field_name: body
+entity_type: node
+bundle: countryinfo
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
